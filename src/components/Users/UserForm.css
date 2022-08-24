@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 5px;
+}
+
+.form-control input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.button-control {
+  display: flex;
+  justify-content: right;
+  margin-right: 50px;
+}
+.button-control button {
+  padding: 0.6rem;
+  font-size: large;
+  font-weight: bold;
+}
