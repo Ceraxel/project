@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-const UserList = () => {
+const UserList = props => {
+  console.log(props.usersData);
   return <div></div>;
 };
 
