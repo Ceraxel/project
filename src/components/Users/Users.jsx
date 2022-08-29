@@ -10,9 +10,11 @@ const Users = props => {
     props.data(data);
   };
   return (
-    <Card className='users'>
-      <UserForm onSaveUserData={saveDataHandler} />
-    </Card>
+    <>
+      <Card className='users'>
+        <UserForm onSaveUserData={saveDataHandler} />
+      </Card>
+    </>
   );
 };
 
