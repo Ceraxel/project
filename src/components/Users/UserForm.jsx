@@ -18,6 +18,7 @@ const UserForm = props => {
     event.preventDefault();
 
     const UserData = {
+      key: Math.random(),
       Username: enteredUsername,
       Age: enteredAge,
     };

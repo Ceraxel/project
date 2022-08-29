@@ -1,0 +1,14 @@
+.item-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+
+.item-list h2 {
+  display: flex;
+  margin: 0;
+  font-size: large;
+  color: black;
+  padding: 0 8px;
+}

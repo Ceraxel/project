@@ -1,22 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './Users.css';
 import Card from '../UI/Card';
 import UserForm from './UserForm';
-import UserList from './UserList';
+import './UserList.css';
 
-const Users = () => {
-  const [userData, setUserData] = useState([]);
+const Users = props => {
   const saveDataHandler = data => {
-    setUserData(prevUserData => {
-      return [data, ...prevUserData];
-    });
+    props.data(data);
   };
-
   return (
     <Card className='users'>
       <UserForm onSaveUserData={saveDataHandler} />
-      <UserList usersData={userData} />
     </Card>
   );
 };
